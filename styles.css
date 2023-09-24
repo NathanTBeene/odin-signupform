@@ -1,10 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
 
   --clr-background: #0F0633;
+  --clr-background-shadow: #04020eb7;
   --clr-primary: #FFE0E2;
   --clr-secondary: #FF8C99;
   --clr-accent: #9F3CA9;
 
-  
+  --ff-primary: 'Nunito', sans-serif;
+  --ff-secondary: 'PT Sans', sans-serif;
 
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  color: var(--clr-background);
+  max-width: 50ch;
+  margin: 1.5rem 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-regular);
+  background-color: var(--clr-background);
+}
+
+a {
+  color: var(--clr-secondary);
+  text-decoration: none;
+}
+
+
+.register-container {
+  max-width: 50%;
+  height: 80vh;
+  margin: 5rem auto;
+  display: flex;
+  filter: drop-shadow(0px 0px 12px var(--clr-background-shadow));
+}
+
+.sidebar-container {
+  border-radius: 2rem 0 0 2rem;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(/Img/login-img.jpg);
+  background-size: 400%;
+  background-repeat: no-repeat;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.photographer {
+  color:var(--clr-primary);
+  font-family: var(--ff-primary);
+  text-align: center;
+  padding: 1rem;
+}
+
+.form-container {
+  background: var(--clr-primary);
+  border-radius: 0 2rem 2rem 0;
+  padding: 4rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-left: -1rem;
+}
+
+.form label{
+  color:var(--clr-background);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-primary);
+}
+
+.form input{
+  padding: .5rem;
+}
+
+.form input:focus {
+  border: none;
+}
+
+.form section{
+  margin: 0 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.form-container section label{
+  display:block;
+}
+
+.form-submit-btn {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 4.5rem;
+  background-color: var(--clr-secondary);
+  border: solid 2px var(--clr-secondary);
+  color:var(--clr-primary);
+  font-size: 1.8rem;
+  font-family: var(--ff-primary);
+  margin-bottom: 1.5rem;
+
+  transition: all ease-in 0.2s;
+}
+
+.form-submit-btn:hover{
+  background:none;
+  color:var(--clr-secondary)
+}
+
+.login {
+  color: var(--clr-background)
 }

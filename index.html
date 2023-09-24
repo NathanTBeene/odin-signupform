@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="register-container">
     <div class="sidebar-container">
-      <img src="/Img/login-img.jpg" alt="Image of a purple and pink sunset">
       <p class="photographer">
         Photo by
         <a href="https://unsplash.com/@martz90" class="photographer-link">Martin Martz</a>
@@ -21,14 +23,38 @@
     <div class="form-container">
       <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
       <h2>You <em>know</em> you want to.</h2>
+      <h3>Let's do this!</h3>
 
-      <form action="">
-        <h3>Let's do this!</h3>
+      <form class="form" action="">
         <section>
-          <label for="firstname">First Name</label>
-          <input type="name" placeholder="John">
+          <label for="firstName">First Name</label>
+          <input type="name" placeholder="John" name="firstName">
+        </section>
+        <section>
+          <label for="lastName">Last Name</label>
+          <input type="name" placeholder="Doe" name="lastName">
+        </section>
+        <section>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Johndoe22@gmail.com" name="email">
+        </section>
+        <section>
+          <label for="phone">Phone Number</label>
+          <input type="tel" placeholder="888-***-****" name="phone">
+        </section>
+        <section>
+          <label for="password">Password</label>
+          <input type="password" placeholder="Input password here" name="password">
+        </section>
+        <section>
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" placeholder="Confirm password here" name="confirmPassword">
         </section>
       </form>
+
+      <button class="form-submit-btn btn">Create Account</button>
+
+      <p class="login">Already have an account? <a href="#" class="login-link">Log in</a></p>
 
     </div>
   </div>
