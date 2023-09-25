@@ -99,10 +99,6 @@ a {
   padding: .5rem;
 }
 
-.form input:focus {
-  border: none;
-}
-
 .form section{
   margin: 0 1rem;
   margin-bottom: 2.4rem;
